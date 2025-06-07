@@ -1,0 +1,247 @@
+/* 
+  Hello World CSS - Easy to customize!
+  
+  TIP: Try changing the colors below to personalize your website:
+  - Change --primary-color to your favorite color
+  - Update --accent-color for buttons and highlights
+  - Modify --text-color for the main text
+*/
+
+:root {
+    --primary-color: #6366f1;     /* Purple - change this to your favorite color! */
+    --accent-color: #f59e0b;      /* Orange for buttons */
+    --text-color: #1f2937;        /* Dark gray for text */
+    --light-gray: #f9fafb;        /* Light background */
+    --white: #ffffff;
+    --border-color: #e5e7eb;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, var(--light-gray) 0%, #e0e7ff 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Main Hello World Section */
+.hello-section {
+    text-align: center;
+    padding: 4rem 0;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.hello-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hello-message {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Interactive Button */
+.hello-button {
+    background: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.hello-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+    background: #d97706;
+}
+
+/* Surprise Message */
+.surprise-message {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    border-radius: 15px;
+    border: 2px solid var(--accent-color);
+    transition: all 0.5s ease;
+}
+
+.surprise-message.hidden {
+    display: none;
+}
+
+.surprise-message h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.encouragement {
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-top: 1rem;
+}
+
+/* About Section */
+.about-section {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-item {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background: var(--light-gray);
+    transition: transform 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-5px);
+}
+
+.about-emoji {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.about-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* Tips Section */
+.tips-section {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tips-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.tips-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.tip {
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.tip:hover {
+    background: #e0e7ff;
+    transform: translateX(5px);
+}
+
+.tip strong {
+    color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-color);
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .hello-title {
+        font-size: 2rem;
+    }
+    
+    .hello-message {
+        font-size: 1rem;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hello-section,
+    .about-section,
+    .tips-section {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Fun animations */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.hello-title {
+    animation: bounce 2s ease-in-out;
+} 
