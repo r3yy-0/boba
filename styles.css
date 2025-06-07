@@ -8,12 +8,12 @@
 */
 
 :root {
-    --primary-color: #6366f1;     /* Purple - change this to your favorite color! */
-    --accent-color: #f59e0b;      /* Orange for buttons */
-    --text-color: #1f2937;        /* Dark gray for text */
+    --primary-color: #b99ad3;     /* Purple - change this to your favorite color! */
+    --accent-color: #76a4d8;      /* Orange for buttons */
+    --text-color: #dac1df;        /* Dark gray for text */
     --light-gray: #f9fafb;        /* Light background */
     --white: #ffffff;
-    --border-color: #e5e7eb;
+    --border-color: #c3dfc4;
 }
 
 /* Reset and base styles */
